@@ -1,0 +1,23 @@
+mixin reviewsItem($img,$name)
+ .reviews_item
+   <div class="card" style="width: 18rem;">
+   img(src="../img/" + $img + "photo.png", class="card-img-top" alt="#")
+   <div class="card-body">
+       <p class="card-text">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+       img(src="../img/stars.png", alt="stars")
+       p #{$name}
+       span Designer 
+   </div>
+   </div>
+section.reviews 
+    .container__reviews
+     .reviews_title Testimonials
+     .reviews_content
+        +reviewsItem ('1','Абрамов Шарль')
+        +reviewsItem ('2','Аксёнов Яков')
+        +reviewsItem ('3','Воронов Зигмунд')
+        +reviewsItem ('4','Мазайло Нина')
+        +reviewsItem ('5','Овчаренко Сава')
+        +reviewsItem ('6','Кулакова Алла')
+     <button class="btn btn-light" type="submit">More Testimonials</button>
+     

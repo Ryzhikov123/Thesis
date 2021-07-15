@@ -1,0 +1,57 @@
+.home-section__content {
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
+    span{
+        font-family: $primaryFontBold;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: $white;
+    }
+    h1{
+        font-family: $primaryFontRegular;
+        font-weight: 900;
+        font-size: 55px;
+        line-height: 65px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $white;
+        padding:17px 0 27px 0;
+        @media (max-width: $md){
+            width: 80%;
+            margin: 0 auto;
+            font-size: 46px;
+            line-height: 57px;
+        }
+    }
+    p{
+        font-family: $primaryFontBold;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color:$white;
+        padding-bottom: 90px;
+        @media (max-width: $md){
+            width: 80%;
+        }
+    }
+    .btn.btn-light{
+        font-family: $primaryFontBold;
+        font-size: 22px;
+        line-height: 33px;
+        color:$blue;
+        padding:16px 58px;
+        border-radius: 35px;
+    }
+    img{
+        padding-top: 130px;
+        padding-bottom: 135px;
+        width: 100%;
+    }
+    .img__MB{
+        width: 80%;
+    }
+}

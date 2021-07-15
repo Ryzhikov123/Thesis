@@ -1,11 +1,27 @@
 @import './fonts.scss';
 @import './constants.scss';
 @import './mixins.scss';
-@import './carousel.scss';
-@import './button.scss';
+@import './header.scss';
+@import './navbar.scss';
+@import './example.scss';
+@import './sale.scss';
+@import './subscribe.scss';
+@import './partners.scss';
+@import './reviews.scss';
+@import './price.scss';
+@import './contacts.scss';
+@import './footer.scss';
+body{
+    height: 100%;
 
-.container {
-  width: 75%;
-  margin: 0 auto;
+    background: #252B42;
 }
-
+section.home-section{
+    background-image: url(../img/background.png) ;
+    // background-repeat: no-repeat;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    // background-size: cover;
+}

@@ -1,0 +1,66 @@
+.container__reviews {
+  width: 70%;
+  margin: 0 auto;
+  @include flex-column;
+  .reviews_title {
+    font-family: $primaryFontRegular;
+    color: $white;
+    font-size: 46px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding: 111px 0 90px;
+  }
+  .reviews_content {
+    @include flex-row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: $md){
+      @include flex-column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .reviews_item {
+    width: 33, 3%;
+    margin-bottom: 100px;
+    text-align: center;
+    .card-text {
+      font-family: $primaryFontRegular;
+      color: $darkGray;
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: 0.2px;
+    }
+    p {
+      font-family: $primaryFontRegular;
+      color: $darkBlack;
+      font-size: 15px;
+      line-height: 27px;
+      letter-spacing: 0.2px;
+      margin: 30px 0 10px;
+    }
+    span {
+      font-family: $primaryFontRegular;
+      color: $darkGray;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.1px;
+    }
+  }
+  .btn.btn-light {
+    margin: 0 auto;
+    background-color: $blue;
+    border-color: $blue;
+    color: $white;
+    font-family: $primaryFontBold;
+    font-size: 22px;
+    line-height: 33px;
+    padding: 16px 43px;
+    margin-bottom: 100px;
+    border-radius: 35px;
+  }
+}
+.card-img-top {
+  padding: 25px 60px;
+}

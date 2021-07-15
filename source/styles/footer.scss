@@ -1,0 +1,101 @@
+.links{
+    color:$white;
+    padding: 120px 0 130px;
+    .container {
+        @include flex-row;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .links__info{
+        .links__logo{
+            @include flex-row;
+            justify-content: space-between;
+            width: 50%;
+            @media (max-width: $sm){
+                width: 50%;
+                margin: 0 auto;
+                justify-content: space-between;
+                padding-top: 85px;
+            }
+        }
+    }
+    &__descr{
+        margin-top: 32px;
+        width: 100%;
+        p.links__descr_Font-bold{
+            font-family: $primaryFontBold;
+            font-size: 22px;
+            line-height: 33px;
+            margin-bottom: 5px;
+            @media (max-width: $md){
+                text-align: center;
+            }
+        }
+        p{
+            font-family: $primaryFontRegular;
+            font-size: 18px;
+            line-height: 27px;
+            letter-spacing: 0.2px;
+        }
+        form{
+            .form-control.me-2{
+                margin-top: 29px;
+                border-radius: 35px;
+                padding-left: 20px;
+            }
+            .btn.btn-light{
+                width: 100%;
+                background-color: $blue;
+                border-color: $blue;
+                color: $white;
+                margin-top: 15px ;
+                border-radius: 35px;
+            }
+          }
+    }
+    &__navigation{
+        flex:2;
+        @include flex-row;
+        justify-content: space-between;
+        @media (max-width: $sm){
+            width: 90%;
+            margin: 0 auto;
+            @include flex-column;
+            justify-content: center;
+            align-items: center;
+          }
+        &_list{
+            @media (max-width: $sm){
+                width: 90%;
+                margin: 0 auto;
+                @include flex-column;
+                justify-content: center;
+                align-items: center;
+            }
+            .links__navigation-list-title{
+                font-size: 22px;
+                line-height: 33px;
+                font-family: $primaryFontRegular;
+                text-transform: uppercase;
+                letter-spacing: 0.1px;
+            }
+         ul{
+                padding-left: 0;
+                margin-top: 25px;
+                list-style-type: none;
+
+            }
+          li{
+            font-family: $primaryFontRegular;
+            font-size: 15px;
+            line-height: 27px;
+            color: $white;
+            margin:8px 0;
+            padding-left: 0;
+            @media (max-width: $sm){
+                padding: 0;
+            }
+           }
+        }   
+    }
+}
